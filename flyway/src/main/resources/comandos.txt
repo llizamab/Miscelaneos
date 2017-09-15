@@ -1,0 +1,9 @@
+flyway:clean 
+
+flyway:migrate 
+
+flyway:info
+
+flyway:validate
+
+flyway:repair

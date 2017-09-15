@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cl.test</groupId>
+  <artifactId>flyway</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+        <!-- Fly way -->
+        <dependency>
+            <groupId>com.googlecode.flyway</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <!-- 
+        <dependency>
+           <groupId>com.oracle</groupId>
+           <artifactId>ojdbc14</artifactId>
+           <version>10.2.0.4.0</version>
+       </dependency>
+        -->
+        <dependency>
+           <groupId>com.oracle</groupId>
+           <artifactId>ojdbc6</artifactId>
+           <version>11.2.0.1.0</version>
+       </dependency>
+    </dependencies>
+  
+  	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>4.0</version>
+                <configuration>
+                    <url>jdbc:oracle:thin:@192.168.56.101:1521:xe</url>
+                    <user>TEMUCO_FLYWAY</user>
+                    <password>TEMUCO_FLYWAY</password>
+                </configuration>
+                <dependencies>
+                <!-- 
+                    <dependency>
+			           <groupId>com.oracle</groupId>
+			           <artifactId>ojdbc6</artifactId>
+			           <version>11.2.0.1.0</version>
+			       </dependency> -->
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+  
+</project>

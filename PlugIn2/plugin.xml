@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Mercadona Tools"
+            visible="true"
+            id="PlugIn.actionSet">
+         <menu
+               label="Mercadona Tools"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Comenta recarga"
+               icon="icons/sample.gif"
+               class="plugin.actions.SampleAction"
+               tooltip="Comenta recarga de escenario en Junits"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.SampleAction">
+         </action>
+         <action
+               label="&amp;Genera TestDummy"
+               icon="icons/sample1.gif"
+               class="plugin.actions.DummyAction"
+               tooltip="Genera el testDummy"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.DummyAction">
+         </action>
+         <action
+               label="&amp;Generar Constantes"
+               icon="icons/sample4.gif"
+               class="plugin.actions.ConstantAction"
+               tooltip="Generador de constantes"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.ConstantAction">
+         </action>
+         <action
+               label="&amp;Exclusiones Sonar"
+               icon="icons/sample2.gif"
+               class="plugin.actions.ExclusionsAction"
+               tooltip="Genera las exclusiones de Sonar"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.ExclusionsAction">
+         </action>
+         <!--
+          <action
+               label="&amp;Dependencias"
+               icon="icons/sample2.gif"
+               class="plugin.actions.DependenciasAction"
+               tooltip="Genera las dependencias de un webservice"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.DependenciasAction">
+         </action>
+         -->
+         <!--action
+               label="&amp;Generar Sanity Check"
+               icon="icons/sample3.gif"
+               class="plugin.actions.GenerateSC"
+               tooltip="Generar Sanity Check"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="plugin.actions.GenerateSC">
+         </action-->
+      </actionSet>
+   </extension>
+
+</plugin>
